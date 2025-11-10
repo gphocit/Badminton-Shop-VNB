@@ -1,0 +1,94 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgb(206, 239, 248), rgb(209, 255, 203));
+}
+.header img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header img,
+h3,
+input {
+  font-family: Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(31, 16, 16);
+  margin-right: 50px;
+}
+.header input {
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid rgb(181, 168, 168);
+  font-weight: normal;
+  width: 400px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(246, 146, 146);
+  border-style: solid;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgb(181, 168, 168);
+  margin-bottom: 20px;
+}
+.navbar div {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(31, 16, 16);
+  cursor: pointer;
+}
+.navbar div:hover {
+  text-decoration: underline;
+}
+.navbar div:active {
+  color: white;
+  transform: translate(1px, 1px);
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+}
+.production-manager {
+  border-style: solid;
+  margin-top: 50px;
+  border-radius: 20px;
+  border-color: rgb(43, 37, 37);
+  background: linear-gradient(rgb(248, 227, 222), rgb(214, 255, 208));
+  padding: 5px;
+}
+.product-section {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}
+.product-section div {
+  margin-right: 40px;
+  text-align: center;
+  width: 250px;
+}
+.product-section img {
+  width: 260px;
+  height: 280px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(101, 118, 129);
+}
+.product-section img:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 10px 10px 10px rgb(110, 127, 139);
+}
