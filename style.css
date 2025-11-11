@@ -5,6 +5,9 @@ body {
   box-sizing: border-box;
   background: linear-gradient(to right, rgb(206, 239, 248), rgb(209, 255, 203));
 }
+html {
+  scroll-behavior: smooth; /* 👈 hiệu ứng cuộn mượt */
+}
 .header img {
   width: 100px;
   height: 100px;
@@ -15,6 +18,12 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+}
+.header h3 {
+  margin-left: 100px;
+  margin-right: 100px;
+  font-size: 40px;
+  color: rgb(95, 43, 128);
 }
 .header img,
 h3,
@@ -48,6 +57,11 @@ input {
   font-weight: bold;
   color: rgb(31, 16, 16);
   cursor: pointer;
+}
+
+.navbar div a {
+  text-decoration: none;
+  color: inherit;
 }
 .navbar div:hover {
   text-decoration: underline;
@@ -91,4 +105,36 @@ input {
 .product-section img:hover {
   transform: scale(1.05, 1.05);
   box-shadow: 10px 10px 10px rgb(110, 127, 139);
+}
+#products{
+  display: block;
+  margin: 50px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  text-align: center;
+}
+.product-list div{
+  margin: 20px;
+  text-align: center;
+  padding: auto;
+}
+.product-list img{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(170, 190, 204);
+}
+.product-list img:hover {
+  transform: scale(1.02, 1.02);
+  box-shadow: 10px 10px 10px rgb(150, 170, 184);
+  opacity: 0.7;
+  transition: opacity 0.5s, transform 0.5s;
 }
